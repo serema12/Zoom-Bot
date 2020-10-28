@@ -1,0 +1,27 @@
+form.addEventListener('submit', function(){
+        return false;
+      })
+    
+      var times = 100;   //Here put the number of times you want to auto submit
+      (function submit(){
+        if(times == 0) return;
+        form.submit();
+        times--;
+        setTimeout(submit, 1000);   //Each second
+      })(); 
+
+
+
+zoomLink.onload = ()=>{
+        var button = document.getElementsByClassName('_3Gj8x8oc');
+        console.log(button)
+        zoomLink.close()
+        alert(zoomLink.closed)
+        button.form.submit()
+    }
+    var timer = setInterval(function() { 
+        document.getElementsByClassName('_3Gj8x8oc');
+        clearInterval(timer);
+        alert('closed');
+        
+    }, 1000);
